@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Shruthi | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7fbff;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #e8f0ff;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #6d8cd4;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #3a568c;
+    }
+
+    section {
+      padding: 2rem 2rem;
+      /* reduced spacing */
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.2rem;
+      /* reduced gap */
+      color: #6d8cd4;
+    }
+
+    h2 .icon {
+      font-size: 1.5rem;
+      margin-right: 0.3rem;
+      color: #6d8cd4;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #e8f0ff;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      background: #6d8cd4;
+      color: white;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .btn:hover {
+      background: #3a568c;
+    }
+  </style>
+</head>
+
+<body class="data-mode">
+
+  <header>
+    <h1>Kasireddi Sai Shruthi</h1>
+    <p>Data Scientist ✦ ML ✦ AI</p>
+  </header>
+
+  <section id="about-data">
+    <h2><span class="icon">📊</span> About Me</h2>
+    <p>
+      I am a Data Scientist with expertise in Machine Learning, NLP, and AI-driven solutions. I build end-to-end data
+      pipelines, from data processing to deploying production-grade models. Skilled in Python, SQL, PyTorch, TensorFlow,
+      and LLMs like GPT, BERT, and XLM-R for multilingual NLP tasks including sentiment analysis, translation, and NER.
+      Experienced in interactive dashboards and analytics using Streamlit, Plotly, Tableau, and Dataiku. I also work
+      with modern AI workflows like RAG, LangGraph, and Agentic AI to develop scalable solutions. Passionate about
+      deriving actionable insights and creating innovative AI applications that benefit businesses, public sector, and
+      society.
+    </p>
+  </section>
+  <section id="education">
+    <h2><span class="icon">🎓</span> Education</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>B.Tech in Computer Science & Engineering</h3>
+        <p><strong>Institute:</strong> Anil Neerukonda Institute of Technology and Sciences, Visakhapatnam, India</p>
+        <p><strong>Duration:</strong> 2020 – 2024</p>
+        <p><strong>CGPA:</strong> 8.8 / 10</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certs">
+    <h2><span class="icon">📜</span> Certifications</h2>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/1C1_jSb7jlIWBI2dxtBwu3bV_-xuS4adF/view" target="_blank">Data Science | excelR</a></li>
+      <li><a href="https://drive.google.com/file/d/1aD6eM4dKs241W-qYoFZhxRZKpe0-dmli/view" target="_blank">Supervised ML: Regression & Classification | Coursera</a>
+      </li>
+      <li><a href="https://drive.google.com/file/d/1PGoyj_MbS6Yj6V2v04X0qJ9jc7agqjT9/view" target="_blank">MathWorks Virtual Internship | AI</a></li>
+      <li><a href="https://drive.google.com/file/d/1kszcFymTHA1Ip_1d35PT8DJzFQcSna5y/view" target="_blank">Data Science Internship | AiVariant</a></li>
+
+    </ul>
+  </section>
+
+
+  <section id="experience">
+    <h2><span class="icon">💼</span> Experience</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Estrel.AI</h3>
+        <p><strong>Role:</strong> Software Engineer (Oct 2024 – Present)</p>
+        <p>Developed AI-driven pipelines using LLMs for crowdsourced data analysis, integrating language detection,
+          translation, sentiment analysis, and NER with sentence transformers. Deployed end-to-end on Dataiku.</p>
+        <p>Built RAG-based AI workflow with LangGraph and Docker for scalable retrieval-augmented generation.</p>
+      </div>
+      <div class="card">
+        <h3>AiVariant</h3>
+        <p><strong>Role:</strong> Data Scientist - Intern (Nov 2023 – Sept 2024)</p>
+        <p>Derived actionable insights for strategic decision-making. Built and deployed supervised, unsupervised, and
+          deep learning models, and created interactive Streamlit applications for visualization and analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2><span class="icon">💻</span> Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Natyasuthra</h3>
+        <p>Developed an Android app that helps users learn traditional South Indian dance routines by recognizing dance
+          forms and mudras. Built a deep learning model using VGG16 for gesture recognition and integrated it with an
+          Android app using Kotlin and XML. The app provides real-time feedback and visual guidance, making traditional
+          dance learning interactive and accessible.</p>
+      </div>
+      <div class="card">
+        <h3>Customer Segmentation</h3>
+        <p>Created a K-Nearest Neighbors (KNN) machine learning model to categorize clients based on shared behavioral
+          and demographic features. Developed a Streamlit web app to visualize client clusters and generate actionable
+          insights for marketing strategies and customer engagement optimization.</p>
+      </div>
+      <div class="card">
+        <h3>Bankruptcy Prediction</h3>
+        <p>Built a Decision Tree classifier to predict the likelihood of business bankruptcy using financial and
+          operational data. Deployed via Streamlit for an interactive dashboard, allowing users to input company data
+          and evaluate risk scores, supporting strategic decision-making in financial planning and risk assessment.</p>
+      </div>
+      <div class="card">
+        <h3>Stock Market Prediction</h3>
+        <p>Implemented a Long Short-Term Memory (LSTM) model to forecast stock prices based on historical market data.
+          Conducted extensive EDA and compared multiple ML models for performance optimization. The interactive
+          Streamlit dashboard allows users to visualize predicted trends, compare model outputs, and make informed
+          investment decisions.</p>
+      </div>
+      <div class="card">
+        <h3>BeatLens – Spotify Analytics (Independent Project)</h3>
+        <p>Developed an interactive web dashboard to analyze personal Spotify listening trends, including top artists,
+          play counts, total minutes streamed, and time-based listening patterns. Built using Python, Pandas, and
+          Streamlit for data processing and visualization. This self-driven project demonstrates my passion for
+          exploring music analytics, and creating interactive, user-friendly dashboards.</p>
+      </div>
+      <div class="card">
+        <h3>Healthcare Analytics Dashboard (Independent Project)</h3>
+        <p>Created an interactive Streamlit app for hospital and complaint analysis, including sentiment prediction
+          using TF-IDF + Logistic Regression. Visualizations include complaint trends, department-wise analysis, and
+          sentiment-based categorization, providing actionable insights for healthcare administrators to improve service
+          quality and patient satisfaction.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-data">
+    <h2><span class="icon">💌</span> Contact Me</h2>
+    <p>Let's connect for professional opportunities 📩</p>
+    <p>Email: <a href="mailto:kasireddysishruthi2003@gmail.com">kasireddysishruthi2003@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/sai-shruthi-7ab598267/">LinkedIn</a></p>
+    <a href="https://drive.google.com/file/d/1fieBejwR8sm-SALAshP0JrTFWIrCWFAW/view?usp=sharing" class="btn">Download Resume</a>
+  </section>
+
+  <footer>
+    <p>Professional Portfolio © 2025</p>
+  </footer>
+
+</body>
+
+</html>
