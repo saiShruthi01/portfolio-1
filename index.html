@@ -21,19 +21,36 @@
 
     header {
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 3.2rem 1rem 2.6rem;
       background: #e8f0ff;
       position: relative;
     }
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+    .profile-photo {
+      width: 148px;
+      height: 148px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffffff;
+      box-shadow: 0 6px 20px rgba(109, 140, 212, 0.35);
+      margin-bottom: 1rem;
     }
 
-    header p {
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    header p.tagline {
       font-size: 1.1rem;
       color: #666;
+      margin: 0.2rem 0;
+    }
+
+    header p.location {
+      font-size: 0.95rem;
+      color: #8697b3;
+      margin: 0.2rem 0 0;
     }
 
     nav {
@@ -69,6 +86,15 @@
       color: #6d8cd4;
     }
 
+    .lede {
+      text-align: center;
+      color: #6d8cd4;
+      font-style: italic;
+      font-size: 0.98rem;
+      margin: -0.6rem auto 1.4rem;
+      max-width: 640px;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -85,6 +111,31 @@
 
     .card:hover {
       transform: translateY(-4px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card .meta {
+      font-size: 0.85rem;
+      color: #8697b3;
+      margin: -0.4rem 0 0.6rem;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.7rem;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      background: #eef2ff;
+      color: #4a5fa5;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
     }
 
     footer {
@@ -136,21 +187,52 @@
 <body class="data-mode">
 
   <header>
+    <img src="assets/profile.png" alt="Kasireddi Sai Shruthi" class="profile-photo" />
     <h1>Kasireddi Sai Shruthi</h1>
-    <p>Data Scientist ✦ ML ✦ AI</p>
+    <p class="tagline">AI Engineer, finding my way toward research</p>
+    <p class="location">Hyderabad, India · learning Korean 🇰🇷</p>
   </header>
 
   <section id="about-data">
     <h2><span class="icon">📊</span> About Me</h2>
     <p>
-      I am a Data Scientist with expertise in Machine Learning, NLP, and AI-driven solutions. I build end-to-end data
-      pipelines, from data processing to deploying production-grade models. Skilled in Python, SQL, PyTorch, TensorFlow,
-      and LLMs like GPT, BERT, and XLM-R for multilingual NLP tasks including sentiment analysis, translation, and NER.
-      Experienced in interactive dashboards and analytics using Streamlit, Plotly, Tableau, and Dataiku. I also work
-      with modern AI workflows like RAG, LangGraph, and Agentic AI to develop scalable solutions. Passionate about
-      deriving actionable insights and creating innovative AI applications that benefit businesses, public sector, and
-      society.
+      I started out building things — NLP pipelines, retrieval systems, agents that reason through
+      multi-step tasks — because I wanted to see AI actually ship and work at scale. Along the way,
+      a quieter question kept surfacing underneath the technical one: not just how to build a system
+      that understands language, but why people communicate, form communities, and construct identity
+      the way they do, especially online and across cultures.
     </p>
+    <p>
+      That question is what's pulling me toward research now. I'm especially drawn to computational
+      social science and Cultural Technology — using multilingual NLP, multimodal AI, and agentic
+      systems to study things like moral emotion in online discourse, fan communities, and digital
+      identity, in the spirit of interdisciplinary programs like KAIST's Graduate School of Culture
+      Technology. I'm learning Korean along the way, partly out of practical necessity, and partly
+      because I think you understand a research community a little better once you can read what it
+      writes in its own language.
+    </p>
+    <p>
+      Day to day, I still work like an engineer: Python, PyTorch and TensorFlow, LLMs from GPT to
+      XLM-R, LangGraph agents, RAG pipelines over vector databases, and dashboards in Streamlit or
+      Plotly to make the results legible to someone who isn't reading the code. I'm just increasingly
+      interested in pointing all of it at questions about people, culture, and media rather than only
+      at business metrics.
+    </p>
+  </section>
+
+  <section id="research-interests">
+    <h2><span class="icon">🌏</span> Research Interests</h2>
+    <p class="lede">
+      Computational social science and human-centered AI, applied to culture, media, and entertainment.
+    </p>
+    <div class="tag-row" style="justify-content:center;">
+      <span class="tag">Cultural Technology</span>
+      <span class="tag">Cross-cultural &amp; Multilingual NLP</span>
+      <span class="tag">Digital Identity &amp; Fan Communities</span>
+      <span class="tag">Multimodal &amp; Agentic AI</span>
+      <span class="tag">Media &amp; Marketing Analytics</span>
+      <span class="tag">Hallyu</span>
+    </div>
   </section>
 
   <section id="education">
@@ -167,6 +249,7 @@
 
   <section id="certs">
     <h2><span class="icon">📜</span> Certifications</h2>
+    <p class="lede">A few of the fundamentals, made official.</p>
     <ul>
       <li><a href="https://drive.google.com/file/d/1C1_jSb7jlIWBI2dxtBwu3bV_-xuS4adF/view" target="_blank">Data Science | excelR</a></li>
       <li><a href="https://drive.google.com/file/d/1aD6eM4dKs241W-qYoFZhxRZKpe0-dmli/view" target="_blank">Supervised ML: Regression & Classification | Coursera</a></li>
@@ -180,16 +263,30 @@
     <div class="grid">
       <div class="card">
         <h3>Estrel.AI</h3>
-        <p><strong>Role:</strong> Software Engineer (Oct 2024 – Present)</p>
-        <p>Developed AI-driven pipelines using LLMs for crowdsourced data analysis, integrating language detection,
-          translation, sentiment analysis, and NER with sentence transformers. Deployed end-to-end on Dataiku.</p>
-        <p>Built RAG-based AI workflow with LangGraph and Docker for scalable retrieval-augmented generation.</p>
+        <p class="meta">Software Engineer · Oct 2024 – Present · Hyderabad, India</p>
+        <p>
+          Most of my time here goes into making machines make sense of language across languages.
+          I built an NLP pipeline that processed 60,000+ multilingual commuter-feedback entries for
+          Dubai's transport authority — language detection, translation, sentiment analysis, and named
+          entity recognition with sentence transformers — and turned the output into a geospatial
+          dashboard that urban planners could actually use for decisions, not just a report to file away.
+        </p>
+        <p>
+          I also spend a lot of time in LangGraph, building an agentic AI system that reasons through
+          multi-step tasks, runs tools in parallel, and holds memory across a conversation across
+          multiple LLM providers — plus a RAG pipeline on a Milvus vector database for semantic search
+          over unstructured knowledge, and 50+ REST APIs to hold it all together.
+        </p>
       </div>
       <div class="card">
         <h3>AiVariant</h3>
-        <p><strong>Role:</strong> Data Scientist - Intern (Nov 2023 – Sept 2024)</p>
-        <p>Derived actionable insights for strategic decision-making. Built and deployed supervised, unsupervised, and
-          deep learning models, and created interactive Streamlit applications for visualization and analysis.</p>
+        <p class="meta">Data Scientist — Intern · Nov 2023 – Sept 2024 · Hyderabad, India</p>
+        <p>
+          My first real exposure to turning data into decisions. I built supervised, unsupervised, and
+          deep learning models, then wrapped them in interactive Streamlit apps so the people making
+          the decisions could explore the outputs themselves, in real time, instead of reading about
+          them secondhand.
+        </p>
       </div>
     </div>
   </section>
@@ -199,50 +296,67 @@
     <div class="grid">
       <div class="card">
         <h3>Natyasuthra</h3>
-        <p>Developed an Android app that helps users learn traditional South Indian dance routines by recognizing dance
-          forms and mudras. Built a deep learning model using VGG16 for gesture recognition and integrated it with an
-          Android app using Kotlin and XML. The app provides real-time feedback and visual guidance, making traditional
-          dance learning interactive and accessible.</p>
+        <p class="meta">Cultural technology · Computer vision</p>
+        <p>
+          An Android app that helps people learn traditional South Indian dance by recognizing dance
+          forms and mudras (hand gestures) in real time, using a VGG16 model built in TensorFlow and
+          an interface in Kotlin. This was probably my first real attempt at pointing AI at culture
+          rather than business — using a recognition model to make an embodied, traditional art form
+          legible to a machine, and a little more accessible to someone learning it for the first time.
+        </p>
       </div>
       <div class="card">
         <h3>Customer Segmentation</h3>
-        <p>Created a K-Nearest Neighbors (KNN) machine learning model to categorize clients based on shared behavioral
-          and demographic features. Developed a Streamlit web app to visualize client clusters and generate actionable
-          insights for marketing strategies and customer engagement optimization.</p>
+        <p class="meta">Machine learning · Streamlit</p>
+        <p>
+          A K-Nearest Neighbors model that groups customers by shared behavioral and demographic
+          traits, wrapped in a Streamlit dashboard so a marketing team could actually see the clusters
+          and use them, rather than just reading a summary of them.
+        </p>
       </div>
       <div class="card">
         <h3>Bankruptcy Prediction</h3>
-        <p>Built a Decision Tree classifier to predict the likelihood of business bankruptcy using financial and
-          operational data. Deployed via Streamlit for an interactive dashboard, allowing users to input company data
-          and evaluate risk scores, supporting strategic decision-making in financial planning and risk assessment.</p>
+        <p class="meta">Decision trees · Risk modeling</p>
+        <p>
+          A decision tree classifier that estimates a company's bankruptcy risk from financial and
+          operational data, with an interactive dashboard where you can enter a company's numbers and
+          watch a risk score come out the other side — built with financial planning conversations
+          in mind.
+        </p>
       </div>
       <div class="card">
         <h3>Stock Market Prediction</h3>
-        <p>Implemented a Long Short-Term Memory (LSTM) model to forecast stock prices based on historical market data.
-          Conducted extensive EDA and compared multiple ML models for performance optimization. The interactive
-          Streamlit dashboard allows users to visualize predicted trends, compare model outputs, and make informed
-          investment decisions.</p>
+        <p class="meta">LSTM · Time series</p>
+        <p>
+          An LSTM model for forecasting stock prices, backed by a fair amount of exploratory analysis
+          and model comparison to see what actually held up. The Streamlit dashboard lets you line
+          predicted trends up against what really happened.
+        </p>
       </div>
       <div class="card">
-        <h3>BeatLens – Spotify Analytics (Independent Project)</h3>
-        <p>Developed an interactive web dashboard to analyze personal Spotify listening trends, including top artists,
-          play counts, total minutes streamed, and time-based listening patterns. Built using Python, Pandas, and
-          Streamlit for data processing and visualization. This self-driven project demonstrates my passion for
-          exploring music analytics, and creating interactive, user-friendly dashboards.</p>
+        <h3>BeatLens — Spotify Analytics</h3>
+        <p class="meta">Independent project · Data visualization</p>
+        <p>
+          A small dashboard born out of curiosity about my own listening habits — top artists, play
+          counts, minutes streamed, patterns over time. Nothing groundbreaking, but it's the project
+          where I first enjoyed exploring data purely because I wanted to know the answer.
+        </p>
       </div>
       <div class="card">
-        <h3>Healthcare Analytics Dashboard (Independent Project)</h3>
-        <p>Created an interactive Streamlit app for hospital and complaint analysis, including sentiment prediction
-          using TF-IDF + Logistic Regression. Visualizations include complaint trends, department-wise analysis, and
-          sentiment-based categorization, providing actionable insights for healthcare administrators to improve service
-          quality and patient satisfaction.</p>
+        <h3>Healthcare Analytics Dashboard</h3>
+        <p class="meta">Independent project · NLP</p>
+        <p>
+          An interactive dashboard for hospital complaint analysis, using TF-IDF and logistic
+          regression for sentiment prediction, with breakdowns by department and complaint trend over
+          time — built to give administrators a faster read on where service quality was slipping.
+        </p>
       </div>
     </div>
   </section>
 
   <section id="contact-data">
     <h2><span class="icon">💌</span> Contact Me</h2>
-    <p>Let's connect for professional opportunities 📩</p>
+    <p>I'd love to talk about research, ideas, or anything in between — reach out. 📩</p>
 
     <!-- ✅ ICONS ONLY -->
     <div class="icon-links">
@@ -259,7 +373,7 @@
   </section>
 
   <footer>
-    <p>Professional Portfolio © 2025</p>
+    <p>Kasireddi Sai Shruthi — Portfolio © 2025</p>
   </footer>
 
 </body>
